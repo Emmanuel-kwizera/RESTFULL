@@ -1,13 +1,16 @@
 body {
     font-family: 'lato', sans-serif;
 }
+.button-container{
+    border-radius: 3px;
+}
 .container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 26px;
+    margin-top: 65px;
 }
 .responsive-table li {
     border-radius: 3px;
@@ -28,20 +31,26 @@ body {
     font-family: serif;
 }
 .responsive-table .col-1 {
-    flex-basis: 25%;
+    flex-basis: 10%;
 }
 .responsive-table .col-2 {
     flex-basis: 40%;
 }
 .responsive-table .col-3 {
-    flex-basis: 10%;
+    flex-basis: 25%;
 }
 .responsive-table .col-4 {
     flex-basis: 25%;
 }
 @media all and (max-width: 767px) {
+    .button-container{
+        display: none;
+    }
     .responsive-table .table-header {
         display: none;
+   }
+   .actions{
+    display: none;
    }
     .responsive-table li {
         display: block;

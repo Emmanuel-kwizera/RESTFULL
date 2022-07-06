@@ -1,11 +1,11 @@
 import { Router } from 'express';
 import { registerDefinition, registerSchema } from 'swaggiffy';
-import { signup, signin, getProfile } from '../controllers/admin.controller';
+import { register, signin, getProfile } from '../controllers/admin.controller';
 import AuthMiddleware from '../middlewares/auth.middleware';
 
 const router = Router();
 
-router.post('/register', signup);
+router.post('/register', register);
 router.post('/signin', signin);
 router.get('/profile', AuthMiddleware, getProfile);
 

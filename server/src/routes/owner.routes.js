@@ -11,5 +11,5 @@ router.get('/:id', getOwnerById);
 router.get('/email/:email', getOwnerByEmail);
 router.delete('/:id', deleteOwner);
 
-registerDefinition(router, { tags: 'Owners', mappedSchema: 'Owner', basePath: '/api/v1/owners' });
+registerDefinition(router, { tags: 'Owners', mappedSchema: 'Owner', basePath: '/api/owners' });
 export default router;

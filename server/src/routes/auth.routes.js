@@ -17,5 +17,5 @@ const authDto = {
     password: ''
 }
 registerSchema('AuthDto', authDto);
-registerDefinition(router, { tags: "Auth", mappedSchema: "AuthDto", basePath: "/api/v1/auth" });
+registerDefinition(router, { tags: "Auth", mappedSchema: "AuthDto", basePath: "/api/auth" });
 export default router;

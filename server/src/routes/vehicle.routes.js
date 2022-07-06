@@ -13,6 +13,6 @@ router.put('/:id', updateVehicle);
 router.delete('/:id', deleteVehicle);
 // router.put('/:id/vote', AuthMiddleware, vote);
 
-registerDefinition(router, { tags: "Vehicles", mappedSchema: "Vehicle", basePath: "/api/v1/vehicle" });
+registerDefinition(router, { tags: "Vehicles", mappedSchema: "Vehicle", basePath: "/api/vehicle" });
 
 export default router;

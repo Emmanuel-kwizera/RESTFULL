@@ -14,14 +14,14 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send({
-        message: 'Welcome to the Vehicle tracking system API',
+        message: 'Welcome to the Vehicle tracking system APIS',
         client: "Rwanda Revenue Authority",
     })
 });
 
-app.use('/api/v1/auth', authRoute);
-app.use('/api/v1/owners', ownersRoute);
-app.use('/api/v1/vehicles', vehiclesRoute);
+app.use('/api/auth', authRoute);
+app.use('/api/owners', ownersRoute);
+app.use('/api/vehicles', vehiclesRoute);
 
 
 const PORT = process.env.PORT || 4000;

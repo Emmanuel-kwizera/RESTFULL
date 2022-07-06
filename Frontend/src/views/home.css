@@ -1,7 +1,9 @@
 .header{
     font-family: Inria Serif;
 }
+input[type="text"] {
 
-sign-up Link{
-    font-family: Inria Serif;
-}
+    border:none; /* Get rid of the browser's styling */
+    border-bottom:1px solid black; /* Add your own border */
+
+ }

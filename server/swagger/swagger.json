@@ -29,7 +29,7 @@
       }
     },
     "paths": {
-      "/api/v1/auth/register": {
+      "/api/auth/register": {
         "post": {
           "tags": [
             "Auth"
@@ -72,7 +72,7 @@
           ]
         }
       },
-      "/api/v1/auth/signin": {
+      "/api/auth/signin": {
         "post": {
           "tags": [
             "Auth"
@@ -115,7 +115,7 @@
           ]
         }
       },
-      "/api/v1/auth/profile": {
+      "/api/auth/profile": {
         "get": {
           "tags": [
             "Auth"
@@ -161,7 +161,7 @@
           ]
         }
       },
-      "/api/v1/owners": {
+      "/api/owners": {
         "post": {
           "tags": [
             "Owners"
@@ -248,7 +248,7 @@
           ]
         }
       },
-      "/api/v1/owners/{id}": {
+      "/api/owners/{id}": {
         "put": {
           "tags": [
             "Owners"
@@ -393,7 +393,7 @@
           ]
         }
       },
-      "/api/v1/owners/email/{email}": {
+      "/api/owners/email/{email}": {
         "get": {
           "tags": [
             "Owners"
@@ -446,7 +446,7 @@
           ]
         }
       },
-      "/api/v1/vehicle": {
+      "/api/vehicle": {
         "post": {
           "tags": [
             "Vehicles"
@@ -533,7 +533,7 @@
           ]
         }
       },
-      "/api/v1/vehicle/{id}": {
+      "/api/vehicle/{id}": {
         "get": {
           "tags": [
             "Vehicles"
@@ -678,7 +678,7 @@
           ]
         }
       },
-      "/api/v1/vehicle/owner/{id}": {
+      "/api/vehicle/owner/{id}": {
         "get": {
           "tags": [
             "Vehicles"
@@ -771,11 +771,11 @@
           },
           "updatedAt": {
             "type": "string",
-            "example": "7/6/2022, 11:33:41 AM"
+            "example": "7/6/2022, 12:36:21 PM"
           },
           "createdAt": {
             "type": "string",
-            "example": "7/6/2022, 11:33:41 AM"
+            "example": "7/6/2022, 12:36:21 PM"
           }
         }
       },
@@ -825,11 +825,11 @@
           },
           "updatedAt": {
             "type": "string",
-            "example": "7/6/2022, 11:33:41 AM"
+            "example": "7/6/2022, 12:36:21 PM"
           },
           "createdAt": {
             "type": "string",
-            "example": "7/6/2022, 11:33:41 AM"
+            "example": "7/6/2022, 12:36:21 PM"
           }
         }
       },
@@ -876,11 +876,11 @@
           },
           "updatedAt": {
             "type": "string",
-            "example": "7/6/2022, 11:33:41 AM"
+            "example": "7/6/2022, 12:36:21 PM"
           },
           "createdAt": {
             "type": "string",
-            "example": "7/6/2022, 11:33:41 AM"
+            "example": "7/6/2022, 12:36:21 PM"
           }
         }
       }

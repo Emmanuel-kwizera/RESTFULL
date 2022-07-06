@@ -32,9 +32,12 @@ const Home = () => {
             </div>
           </div>
           {/* Right div */}
-          <div className="right-div-container bg-white w-1/2">
+          <div className="right-div-container h-screen bg-white text-black w-1/2">
             <div className="header">
-              
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo, fugiat quo, eligendi libero adipisci deserunt eius, eaque error ut quisquam consequatur laboriosam ipsum laudantium! Iusto omnis veniam aperiam quidem.
+            </div>
+            <div className="form">
+              <input type="text" name="names"  placeholder="Names"/>
             </div>
           </div>
         </div>

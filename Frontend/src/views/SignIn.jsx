@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import './styles.css';
 
 const SignIn = () => {
-  // const signUp= () => {
-  //   console.log("Sign Up");
-  // }
+    
   return (
     <React.Fragment>
       <main>
@@ -42,8 +40,8 @@ const SignIn = () => {
                 </div>
                 <div className="right-div">
                 <form>
-                    <input type="email" placeholder="Email or Phone" className="mb-12 focus:mb-12"/>
-                    <input type="password" placeholder="Password" className="mb-14 focus:mb-14"/>
+                    <input name="Email" type="email" placeholder="Email" className="mb-12 focus:mb-12"/>
+                    <input name="password" type="password" placeholder="Password" className="mb-14 focus:mb-14"/>
                     <button className="button font-serif font-thin">Log In</button>
                 </form>
                 </div>

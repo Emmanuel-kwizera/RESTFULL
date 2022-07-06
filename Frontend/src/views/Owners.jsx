@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 
-const Owner = () => {
+const Owners = () => {
   return (
     <React.Fragment>
-      <Header title="Owner" />
+      <Header title="Owners" />
       <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
          
@@ -14,4 +14,4 @@ const Owner = () => {
   );
 };
 
-export default Owner;
+export default Owners;

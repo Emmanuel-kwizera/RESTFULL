@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 import Vehicles from "./views/Vehicles";
 import History from "./views/History";
 import NotFound from "./views/NotFound";
-import Owner from "./views/Owners";
+import Owners from "./views/Owners";
 import Home from "./views/Home";
 import SignIn from "./views/SignIn";
 import './App.css'
@@ -25,7 +25,7 @@ const App = () => {
           <History />
         </Route>
         <Route path="/owners">
-          <Owner />
+          <Owners />
         </Route>
         <Route path="/signin">
           <SignIn />

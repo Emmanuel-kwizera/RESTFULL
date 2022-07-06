@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { registerAdmin } from "../Api/auth";
 import { Link } from "react-router-dom";
 import './styles.css';
 
 const Home = () => {
+  const [admin, setAdmin] = useState({
+    names: "",
+    email: "",
+    phone: "",
+    nationalId: "",
+    password: "",
+  });
+  const handleChange = (e) => {
+    setAdmin({ ...admin, [e.target.name]: e.target.value });
+    console.log(e.target.name);
+  }
+  useState(() => {
+    registerAdmin(admin);
+  })
   // const signUp= () => {
   //   console.log("Sign Up");
   // }
+
   return (
     <React.Fragment>
       <main>
@@ -34,6 +50,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           {/* Right div */}
           <div className="right-div-container w-1/2 text-black">
             <div className="header">
@@ -41,11 +58,16 @@ const Home = () => {
             </div>
             <div className="right-div">
               <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="number" placeholder="Phone Number" />
-                <input type="number" placeholder="NationalID" />
-                <input type="password" placeholder="Password"/>
+                <input 
+                  onChange={(e) => handleChange(e.target)} name={admin.names} type="text" placeholder="Names" />
+                <input 
+                  onChange={(e) => handleChange(e.target)} name={admin.email} type="email" placeholder="Email" />
+                <input 
+                  onChange={(e) => handleChange(e.target)} name={admin.phone} type="number" placeholder="Phone Number" />
+                <input 
+                  onChange={(e) => handleChange(e.target)} name={admin.nationalId} type="number" placeholder="NationalID" />
+                <input 
+                  onChange={(e) => handleChange(e.target)} name={admin.password} type="password" placeholder="Password"/>
                 <button className="button font-serif font-thin">Sign Up</button>
               </form>
             </div>

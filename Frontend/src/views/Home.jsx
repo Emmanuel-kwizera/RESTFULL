@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './home.css';
+import './styles.css';
 
 const Home = () => {
   // const signUp= () => {
@@ -14,7 +14,7 @@ const Home = () => {
           <div className="lg:left-div-container lg:h-screen lg:bg-[#ffbfbf] lg:w-1/2 xl:left-div-container xl:h-screen xl:bg-[#ffbfbf] xl:w-1/2 ">
             <div className="left-content">
               <div className="header">
-                <div className="flex-shrink-0 text-center mt-36 mb-28">
+                <div className="flex-shrink-0 text-center mt-36 mb-20">
                   <Link to="/">
                     <h2 className="text-4xl text-white">RRA</h2>
                   </Link>

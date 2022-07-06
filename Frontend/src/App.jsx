@@ -7,6 +7,7 @@ import History from "./views/History";
 import NotFound from "./views/NotFound";
 import Owner from "./views/Owners";
 import Home from "./views/Home";
+import SignIn from "./views/SignIn";
 import './App.css'
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
         </Route>
         <Route path="/owners">
           <Owner />
+        </Route>
+        <Route path="/signin">
+          <SignIn />
         </Route>
         <Route>
           <NotFound />

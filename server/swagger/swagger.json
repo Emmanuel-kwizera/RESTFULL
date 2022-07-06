@@ -42,7 +42,7 @@
               "name": "body",
               "required": true,
               "schema": {
-                "$ref": "#/definitions/AuthDto"
+                "$ref": "#/definitions/Auth"
               }
             }
           ],
@@ -56,7 +56,7 @@
             "201": {
               "description": "Created",
               "schema": {
-                "$ref": "#/definitions/AuthDto"
+                "$ref": "#/definitions/Auth"
               }
             },
             "500": {
@@ -85,7 +85,7 @@
               "name": "body",
               "required": true,
               "schema": {
-                "$ref": "#/definitions/AuthDto"
+                "$ref": "#/definitions/Auth"
               }
             }
           ],
@@ -99,7 +99,7 @@
             "201": {
               "description": "Created",
               "schema": {
-                "$ref": "#/definitions/AuthDto"
+                "$ref": "#/definitions/Auth"
               }
             },
             "500": {
@@ -135,7 +135,7 @@
               "schema": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/definitions/AuthDto"
+                  "$ref": "#/definitions/Auth"
                 }
               }
             },
@@ -771,15 +771,15 @@
           },
           "updatedAt": {
             "type": "string",
-            "example": "7/6/2022, 12:36:21 PM"
+            "example": "7/6/2022, 1:19:37 PM"
           },
           "createdAt": {
             "type": "string",
-            "example": "7/6/2022, 12:36:21 PM"
+            "example": "7/6/2022, 1:19:37 PM"
           }
         }
       },
-      "AuthDto": {
+      "Auth": {
         "type": "object",
         "properties": {
           "names": {
@@ -799,7 +799,7 @@
           }
         }
       },
-      "CarOwner": {
+      "Owner": {
         "type": "object",
         "properties": {
           "names": {
@@ -825,11 +825,11 @@
           },
           "updatedAt": {
             "type": "string",
-            "example": "7/6/2022, 12:36:21 PM"
+            "example": "7/6/2022, 1:19:37 PM"
           },
           "createdAt": {
             "type": "string",
-            "example": "7/6/2022, 12:36:21 PM"
+            "example": "7/6/2022, 1:19:37 PM"
           }
         }
       },
@@ -876,11 +876,11 @@
           },
           "updatedAt": {
             "type": "string",
-            "example": "7/6/2022, 12:36:21 PM"
+            "example": "7/6/2022, 1:19:37 PM"
           },
           "createdAt": {
             "type": "string",
-            "example": "7/6/2022, 12:36:21 PM"
+            "example": "7/6/2022, 1:19:37 PM"
           }
         }
       }

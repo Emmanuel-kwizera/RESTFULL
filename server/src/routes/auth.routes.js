@@ -9,13 +9,13 @@ router.post('/register', signup);
 router.post('/signin', signin);
 router.get('/profile', AuthMiddleware, getProfile);
 
-const authDto = {
+const Auth = {
     names: '',
     email: '',
     phone: '',
     nationalId: '',
     password: ''
 }
-registerSchema('AuthDto', authDto);
-registerDefinition(router, { tags: "Auth", mappedSchema: "AuthDto", basePath: "/api/auth" });
+registerSchema('Auth', Auth);
+registerDefinition(router, { tags: "Auth", mappedSchema: "Auth", basePath: "/api/auth" });
 export default router;

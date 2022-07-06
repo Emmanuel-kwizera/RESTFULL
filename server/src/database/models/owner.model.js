@@ -24,7 +24,7 @@ const Schema = mongoose.Schema({
     timestamps: true
 });
 
-registerSchema('CarOwner', Schema, { orm: 'mongoose' });
+registerSchema('Owner', Schema, { orm: 'mongoose' });
 
 //create mongoose virtual ref for vehicle
 Schema.virtual("vehicles", {

@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 import './home.css';
 
 const Home = () => {
+  // const signUp= () => {
+  //   console.log("Sign Up");
+  // }
   return (
     <React.Fragment>
       <main>
         <div className="body-container flex">
           {/* Left div */}
-          <div className="left-div-container h-screen bg-[#ffbfbf] w-1/2">
+          <div className="lg:left-div-container lg:h-screen lg:bg-[#ffbfbf] lg:w-1/2 xl:left-div-container xl:h-screen xl:bg-[#ffbfbf] xl:w-1/2 ">
             <div className="left-content">
               <div className="header">
                 <div className="flex-shrink-0 text-center mt-36 mb-28">
@@ -18,13 +21,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="buttons">
-                <div className="sign-up mx-60">
-                  <Link className="rounded-lg px-8 py-3 text-3xl font-serif font-thin bg-white text-[#063970]" to="/">
+                <div className="sign-up mx-56">
+                  <Link className="rounded-lg px-12 py-2 text-2xl font-serif font-thin bg-white text-[#8288ff]" to="/">
                     Sign Up
                   </Link>
                 </div>
-                <div className="sign-in mt-12 mx-60">
-                  <Link className="rounded-lg px-10 py-3 text-3xl font-serif font-thin bg-white text-[#063970]" to="/signin">
+                <div className="sign-in mt-12 mx-56">
+                  <Link className="rounded-lg px-14 py-2 text-2xl font-serif font-thin bg-white text-[#8288ff]" to="/signin">
                     Sign In
                   </Link>
                 </div>
@@ -32,12 +35,19 @@ const Home = () => {
             </div>
           </div>
           {/* Right div */}
-          <div className="right-div-container h-screen bg-white text-black w-1/2">
+          <div className="right-div-container w-1/2 text-black">
             <div className="header">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo, fugiat quo, eligendi libero adipisci deserunt eius, eaque error ut quisquam consequatur laboriosam ipsum laudantium! Iusto omnis veniam aperiam quidem.
+              <div className="heading font-serif pt-14 pb-6 px-52">Welcome! Sign Up</div>
             </div>
-            <div className="form">
-              <input type="text" name="names"  placeholder="Names"/>
+            <div className="right-div">
+              <form>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="number" placeholder="Phone Number" />
+                <input type="number" placeholder="NationalID" />
+                <input type="password" placeholder="Password"/>
+                <button className="button font-serif font-thin">Sign Up</button>
+              </form>
             </div>
           </div>
         </div>

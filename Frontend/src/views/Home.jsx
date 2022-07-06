@@ -15,12 +15,15 @@ const Home = () => {
     setAdmin({ ...admin, [e.target.name]: e.target.value });
     console.log(e.target.name);
   }
-  useState(() => {
-    registerAdmin(admin);
-  })
-  // const signUp= () => {
-  //   console.log("Sign Up");
-  // }
+  
+  const signUp= () => {
+    registerAdmin(admin.names, admin.email, admin.phone, admin.nationalId, admin.password)
+    .then(res=> {
+      alert("SUCCESS");
+    }).catch(e=> {
+      alert("REGISTRATION ERROR");
+    });
+  }
 
   return (
     <React.Fragment>
@@ -57,7 +60,7 @@ const Home = () => {
               <div className="heading font-serif pt-14 pb-6 px-52">Welcome! Sign Up</div>
             </div>
             <div className="right-div">
-              <form>
+              <form onSubmit={()=> {signUp(); return false}}>
                 <input 
                   onChange={(e) => handleChange(e.target)} name={admin.names} type="text" placeholder="Names" />
                 <input 
@@ -68,7 +71,7 @@ const Home = () => {
                   onChange={(e) => handleChange(e.target)} name={admin.nationalId} type="number" placeholder="NationalID" />
                 <input 
                   onChange={(e) => handleChange(e.target)} name={admin.password} type="password" placeholder="Password"/>
-                <button className="button font-serif font-thin">Sign Up</button>
+                <button className="button font-serif font-thin" type="submit">Sign Up</button>
               </form>
             </div>
           </div>

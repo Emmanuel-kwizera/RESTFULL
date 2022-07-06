@@ -19,12 +19,12 @@ const Home = () => {
               </div>
               <div className="buttons">
                 <div className="sign-up mx-60">
-                  <Link className="rounded-lg px-8 py-4 text-3xl font-serif font-thin bg-white text-[#063970]" to="/">
+                  <Link className="rounded-lg px-8 py-3 text-3xl font-serif font-thin bg-white text-[#063970]" to="/">
                     Sign Up
                   </Link>
                 </div>
                 <div className="sign-in mt-12 mx-60">
-                  <Link className="rounded-lg px-10 py-4 text-3xl font-serif font-thin bg-white text-[#063970]" to="/signin">
+                  <Link className="rounded-lg px-10 py-3 text-3xl font-serif font-thin bg-white text-[#063970]" to="/signin">
                     Sign In
                   </Link>
                 </div>
